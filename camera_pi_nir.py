@@ -95,8 +95,8 @@ class Camera(BaseCamera):
                 
                     nImage = Image.fromarray(nv)
                     imgByteArr = io.BytesIO()
-		                nImage.save(imgByteArr, format='JPEG')
-		                imgByteArr = imgByteArr.getvalue()
+		    nImage.save(imgByteArr, format='JPEG')
+		    imgByteArr = imgByteArr.getvalue()
 
 
                     yield imgByteArr
